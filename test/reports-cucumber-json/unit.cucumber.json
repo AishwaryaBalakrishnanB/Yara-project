@@ -1,0 +1,820 @@
+[
+  {
+    "description": "    Add, edit and delete Units",
+    "keyword": "Feature",
+    "name": "Units",
+    "line": 1,
+    "id": "units",
+    "tags": [],
+    "uri": "unit.feature",
+    "elements": [
+      {
+        "id": "units;add-unit",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Add unit",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Logged as user with role Global admin and role Global settings and PolarisMaintenance",
+            "result": {
+              "status": "passed",
+              "duration": 42801000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "clicked  button\"Global settings\"",
+            "result": {
+              "status": "passed",
+              "duration": 5142000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "clicked \"Crop settings\" submenus \"Crops\", \"Units\", \"Unit Conversations\", \"Growth Scales\",\" Soil Types\",\"Crop Residue Management\",\"Variety Correction Factors\" became visible",
+            "result": {
+              "status": "passed",
+              "duration": 484000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "clicked button\"Units\"",
+            "result": {
+              "status": "passed",
+              "duration": 626000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am logged in cropSettings",
+            "result": {
+              "status": "passed",
+              "duration": 281000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I clicked button \"Add Unit\"",
+            "result": {
+              "status": "passed",
+              "duration": 4933000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Unit Name",
+                      "Tags",
+                      "Country (Optional)"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Test",
+                      "DemandUnit",
+                      "Antarctica"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I create new Unit with following details:",
+            "result": {
+              "status": "passed",
+              "duration": 4758000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "clicked button \"Save\" in ADD units",
+            "result": {
+              "status": "passed",
+              "duration": 370000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I see tooltip \"Unit added!\"and\"The new unit has been successfully added to the global list.\"",
+            "result": {
+              "status": "passed",
+              "duration": 7767000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Name",
+                      "Tags",
+                      "Last mod.",
+                      "Actions"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Test",
+                      "DemandUnit",
+                      "?",
+                      "···"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 21,
+            "name": "in Table should be added row with following data:",
+            "result": {
+              "status": "passed",
+              "duration": 2341000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "units;edit-unit-without-saving-changes",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Edit unit without saving changes",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Logged as user with role Global admin and role Global settings and PolarisMaintenance",
+            "result": {
+              "status": "passed",
+              "duration": 7846000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "clicked  button\"Global settings\"",
+            "result": {
+              "status": "passed",
+              "duration": 7032000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "clicked \"Crop settings\" submenus \"Crops\", \"Units\", \"Unit Conversations\", \"Growth Scales\",\" Soil Types\",\"Crop Residue Management\",\"Variety Correction Factors\" became visible",
+            "result": {
+              "status": "passed",
+              "duration": 319000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "clicked button\"Units\"",
+            "result": {
+              "status": "passed",
+              "duration": 447000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am logged in cropSettings",
+            "result": {
+              "status": "passed",
+              "duration": 216000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I clicked on three dots in end of row for unit Test a context menu with options \"Edit\" and \"Delete\" shows",
+            "result": {
+              "status": "passed",
+              "duration": 8803000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Name",
+                      "Tags",
+                      "Last mod.",
+                      "Actions"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Test 1",
+                      "DemandUnit",
+                      "?",
+                      "···"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 28,
+            "name": "I clicked \"Edit\" a modal appeared with following data:",
+            "result": {
+              "status": "passed",
+              "duration": 317000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Unit Name",
+                      "Tags",
+                      "Country (Optional)"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Test  2",
+                      "DemandUnit",
+                      "Antarctica,Timor-Leste,Andorra"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 31,
+            "name": "I changed data in all fields cropSettings:",
+            "result": {
+              "status": "passed",
+              "duration": 10992000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "I clicked button \"<X>\" in uper right corner of modal unit",
+            "result": {
+              "status": "passed",
+              "duration": 586000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Name",
+                      "Tags",
+                      "Last mod.",
+                      "Actions"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Test 1",
+                      "DemandUnit",
+                      "?",
+                      "···"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "a modal disappeared , no changed done to row and data",
+            "result": {
+              "status": "passed",
+              "duration": 129000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "units;edit-unit-with-saving-changes",
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "Edit unit with saving changes",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Logged as user with role Global admin and role Global settings and PolarisMaintenance",
+            "result": {
+              "status": "passed",
+              "duration": 7407000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "clicked  button\"Global settings\"",
+            "result": {
+              "status": "passed",
+              "duration": 5436000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "clicked \"Crop settings\" submenus \"Crops\", \"Units\", \"Unit Conversations\", \"Growth Scales\",\" Soil Types\",\"Crop Residue Management\",\"Variety Correction Factors\" became visible",
+            "result": {
+              "status": "passed",
+              "duration": 365000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "clicked button\"Units\"",
+            "result": {
+              "status": "passed",
+              "duration": 489000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am logged in cropSettings",
+            "result": {
+              "status": "passed",
+              "duration": 278000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "I clicked on three dots in end of row for unit Test a context menu with options \"Edit\" and \"Delete\" shows",
+            "result": {
+              "status": "passed",
+              "duration": 7268000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Unit Name",
+                      "Tags",
+                      "Country (Optional)"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Test",
+                      "DemandUnit",
+                      "Antarctica"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 41,
+            "name": "I clicked \"Edit\" a modal appeared with following data:",
+            "result": {
+              "status": "passed",
+              "duration": 295000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Unit Name",
+                      "Tags",
+                      "Country (Optional)"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Test 1",
+                      "DemandUnit",
+                      "Antarctica,Timor-Leste"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 44,
+            "name": "I changed data in all fields cropSettings:",
+            "result": {
+              "status": "passed",
+              "duration": 9562000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "clicked button \"Save\" in ADD units",
+            "result": {
+              "status": "passed",
+              "duration": 287000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 48,
+            "name": "I see tooltip \"Changes saved\"and\"The changes done to the table row have been successfully saved.\"",
+            "result": {
+              "status": "passed",
+              "duration": 6781000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Name",
+                      "Tags",
+                      "Last mod.",
+                      "Actions"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Test 1",
+                      "DemandUnit",
+                      "?",
+                      "···"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 49,
+            "name": "data for Unit row should be updated:",
+            "result": {
+              "status": "passed",
+              "duration": 2773000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "units;denied--deleting-of-unit",
+        "keyword": "Scenario",
+        "line": 52,
+        "name": "Denied  Deleting of unit",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Logged as user with role Global admin and role Global settings and PolarisMaintenance",
+            "result": {
+              "status": "passed",
+              "duration": 1607000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "clicked  button\"Global settings\"",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 11000ms: Expected to find content: 'Global settings' but never did.\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:41783:8)\n    at Context.resolveAndRunStepDefinition (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:10423:29)\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:9755:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "clicked \"Crop settings\" submenus \"Crops\", \"Units\", \"Unit Conversations\", \"Growth Scales\",\" Soil Types\",\"Crop Residue Management\",\"Variety Correction Factors\" became visible",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "clicked button\"Units\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am logged in cropSettings",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 54,
+            "name": "I clicked on three dots in end of row for unit Test a context menu with options \"Edit\" and \"Delete\" shows",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 55,
+            "name": "I clicked \"Delete\" a content appered \"Please note!\"and\"Are you sure you want to delete Test 1? The action cannot be reverted.\" unit",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 56,
+            "name": "clicked button \"Don't delete\" cropSettings",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Name",
+                      "Tags",
+                      "Last mod.",
+                      "Actions"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Test 1",
+                      "DemandUnit   Al",
+                      "?",
+                      "···"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 57,
+            "name": "modal disappeared and deleting is not done. In table still stay row",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "units;delete-unit",
+        "keyword": "Scenario",
+        "line": 61,
+        "name": "Delete unit",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Logged as user with role Global admin and role Global settings and PolarisMaintenance",
+            "result": {
+              "status": "passed",
+              "duration": 877000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "clicked  button\"Global settings\"",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 11000ms: Expected to find content: 'Global settings' but never did.\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:41783:8)\n    at Context.resolveAndRunStepDefinition (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:10423:29)\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:9755:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "clicked \"Crop settings\" submenus \"Crops\", \"Units\", \"Unit Conversations\", \"Growth Scales\",\" Soil Types\",\"Crop Residue Management\",\"Variety Correction Factors\" became visible",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "clicked button\"Units\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am logged in cropSettings",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 63,
+            "name": "I clicked on three dots in end of row for unit Test a context menu with options \"Edit\" and \"Delete\" shows",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 64,
+            "name": "I clicked \"Delete\" a content appered \"Please note!\"and\"Are you sure you want to delete Test 1? The action cannot be reverted.\" unit",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 65,
+            "name": "I clicked button \"Delete\" cropSettings",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 66,
+            "name": "I see tooltip \"Unit deleted\"and\"The unit has been removed. The unit can anyway be added again.\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "units;delete-unit-when-is-used-in-unit-conversations",
+        "keyword": "Scenario",
+        "line": 68,
+        "name": "Delete unit when is used in Unit Conversations",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Logged as user with role Global admin and role Global settings and PolarisMaintenance",
+            "result": {
+              "status": "passed",
+              "duration": 27378000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "clicked  button\"Global settings\"",
+            "result": {
+              "status": "passed",
+              "duration": 5161000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "clicked \"Crop settings\" submenus \"Crops\", \"Units\", \"Unit Conversations\", \"Growth Scales\",\" Soil Types\",\"Crop Residue Management\",\"Variety Correction Factors\" became visible",
+            "result": {
+              "status": "passed",
+              "duration": 379000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "clicked button\"Units\"",
+            "result": {
+              "status": "passed",
+              "duration": 430000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I am logged in cropSettings",
+            "result": {
+              "status": "passed",
+              "duration": 360000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 69,
+            "name": "I clicked on three dots in end of row for unit conversation a context menu with options \"Edit\" and \"Delete\" shows",
+            "result": {
+              "status": "passed",
+              "duration": 7957000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 71,
+            "name": "clicked \"Delete\" a content appeared \"Please note!\"and\"The unit cannot be deleted as long as it is used in unit conversions, Crop nutrition plan data. Edit the related data and try again.\"",
+            "result": {
+              "status": "passed",
+              "duration": 737000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 72,
+            "name": "clicked button \"Ok\" units",
+            "result": {
+              "status": "passed",
+              "duration": 298000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 73,
+            "name": "a modal disappeared , no changed done to row and data unit conversation",
+            "result": {
+              "status": "passed",
+              "duration": 164000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -75,9 +75,8 @@ export function setInputValue(inputdatacyvalue: string, valueToSet: string): voi
 export function setSingleDropdownValue(dropdowndatacy: string, valueToSet: string): void 
 { 
     cy.get(dropdowndatacy).parent().within(()=>
-    //cy.contains('div', dropdowndatacy,{timeout:5000}).parent().within(() => 
     {                                                                           
-        cy.get('div[class*="dropdown-indicator"]').click()
+        cy.get('div[class*="dropdown-indicator"]',{timeout:10000}).click({force: true}) 
         cy.contains('div', valueToSet).click()
     })
 }
