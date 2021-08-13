@@ -35,4 +35,16 @@ Cypress.Commands.add('LoginToApplication',()=>{
         }
     })
 })
+Cypress.Commands.add('LogoutfromApplication',()=>{
+    cy.visit('/');
+    // cy.url().should('include', '/dashboard')
+     cy.xpath('//label[text()="Profile"]').click()
+     cy.xpath('//span[text()="Log out"]').click()
+//    cy.get(':nth-child(2) > .sc-fzqNqU',{timeout:10000}).contains('Profile').click()
+    // cy.get(":nth-child(2) > span").click()
+    cy.get('#login-part').should('be.visible')
+})
+
+
+
 

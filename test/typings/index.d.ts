@@ -8,6 +8,8 @@ declare namespace Cypress{
            * @example cy.LoginToApplication 
            */
          // dataCy(value: string): Chainable<Element>
-         LoginToApplication():Chainable<Element>
+         LoginToApplication():Chainable<Element>,
+         LogoutfromApplication():Chainable<Element>
         }
       }
+    

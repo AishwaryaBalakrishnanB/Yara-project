@@ -23,7 +23,7 @@
             "name": "Logged as user with role Global admin and role Global settings and PolarisMaintenance",
             "result": {
               "status": "passed",
-              "duration": 11002000000
+              "duration": 39697000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "clicked  button\"Global settings\"",
             "result": {
               "status": "passed",
-              "duration": 5493000000
+              "duration": 4965000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "clicked  button\"Locations\"",
             "result": {
               "status": "passed",
-              "duration": 232000000
+              "duration": 428000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "I am logged in",
             "result": {
               "status": "passed",
-              "duration": 20000000
+              "duration": 46000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "I clicked button \"Add Country\" a modal appeared",
             "result": {
               "status": "passed",
-              "duration": 7481000000
+              "duration": 5248000000
             }
           },
           {
@@ -109,8 +109,9 @@
             "line": 17,
             "name": "I create new country with following details:",
             "result": {
-              "status": "passed",
-              "duration": 13460000000
+              "status": "failed",
+              "duration": 18119000000,
+              "error_message": "AssertionError: Timed out retrying after 6000ms: Expected to find content: '°C' within the selector: 'div' but never did.\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\country.feature:42398:12)"
             }
           },
           {
@@ -119,8 +120,7 @@
             "line": 21,
             "name": "I clicked button \"Save\"",
             "result": {
-              "status": "passed",
-              "duration": 645000000
+              "status": "skipped"
             }
           },
           {
@@ -129,8 +129,7 @@
             "line": 23,
             "name": "I see tooltip\"Country added!\"and\"The new country has been successfully added to the global list.\"",
             "result": {
-              "status": "passed",
-              "duration": 7295000000
+              "status": "skipped"
             }
           },
           {
@@ -168,8 +167,7 @@
             "line": 24,
             "name": "in countryTable should be added row with following data:",
             "result": {
-              "status": "passed",
-              "duration": 2648000000
+              "status": "skipped"
             }
           },
           {
@@ -178,8 +176,7 @@
             "line": 29,
             "name": "I clicked three dots in the end of row in column Action for country Test a context menu with options \"Edit\" and \"Delete\" shows",
             "result": {
-              "status": "passed",
-              "duration": 2794000000
+              "status": "skipped"
             }
           },
           {
@@ -225,8 +222,7 @@
             "line": 30,
             "name": "I choose \"Edit\" a modal appeared with following data:",
             "result": {
-              "status": "passed",
-              "duration": 713000000
+              "status": "skipped"
             }
           },
           {
@@ -272,8 +268,7 @@
             "line": 33,
             "name": "I changed data in all fields:",
             "result": {
-              "status": "passed",
-              "duration": 11968000000
+              "status": "skipped"
             }
           },
           {
@@ -282,8 +277,7 @@
             "line": 36,
             "name": "I clicked button \"<X>\" in right up corner of modal",
             "result": {
-              "status": "passed",
-              "duration": 367000000
+              "status": "skipped"
             }
           },
           {
@@ -292,8 +286,7 @@
             "line": 37,
             "name": "modal disappeared, should not changes any data for country Test",
             "result": {
-              "status": "passed",
-              "duration": 76000000
+              "status": "skipped"
             }
           },
           {
@@ -302,8 +295,7 @@
             "line": 41,
             "name": "I clicked three dots in the end of row in column Action for country Test a context menu with options \"Edit\" and \"Delete\" shows",
             "result": {
-              "status": "passed",
-              "duration": 3076000000
+              "status": "skipped"
             }
           },
           {
@@ -349,8 +341,7 @@
             "line": 42,
             "name": "I choose \"Edit\" a modal appeared with following data:",
             "result": {
-              "status": "passed",
-              "duration": 763000000
+              "status": "skipped"
             }
           },
           {
@@ -396,8 +387,7 @@
             "line": 46,
             "name": "I changed data in all fields:",
             "result": {
-              "status": "passed",
-              "duration": 16364000000
+              "status": "skipped"
             }
           },
           {
@@ -406,8 +396,7 @@
             "line": 49,
             "name": "I clicked button \"Save\"",
             "result": {
-              "status": "passed",
-              "duration": 603000000
+              "status": "skipped"
             }
           },
           {
@@ -416,8 +405,7 @@
             "line": 50,
             "name": "I see tooltip\"Changes saved\"and\"The changes done to the table row have been successfully saved.\"",
             "result": {
-              "status": "passed",
-              "duration": 6611000000
+              "status": "skipped"
             }
           },
           {
@@ -455,8 +443,7 @@
             "line": 51,
             "name": "data for country should be updated in row:",
             "result": {
-              "status": "passed",
-              "duration": 1435000000
+              "status": "skipped"
             }
           },
           {
@@ -465,8 +452,7 @@
             "line": 56,
             "name": "I clicked three dots in the end of row in column Action for country Test a context menu with options \"Edit\" and \"Delete\" shows",
             "result": {
-              "status": "passed",
-              "duration": 4417000000
+              "status": "skipped"
             }
           },
           {
@@ -475,8 +461,7 @@
             "line": 57,
             "name": "I choose \"Delete\" a content appeared \"Please note!\"and\"Are you sure you want to delete trial 1? The action cannot be reverted.\"",
             "result": {
-              "status": "passed",
-              "duration": 950000000
+              "status": "skipped"
             }
           },
           {
@@ -485,8 +470,7 @@
             "line": 58,
             "name": "clicked button \"Don't delete\"",
             "result": {
-              "status": "passed",
-              "duration": 615000000
+              "status": "skipped"
             }
           },
           {
@@ -495,8 +479,7 @@
             "line": 59,
             "name": "modal disappeared, should not changes anything in data or row for country  trial 1",
             "result": {
-              "status": "passed",
-              "duration": 114000000
+              "status": "skipped"
             }
           },
           {
@@ -505,8 +488,7 @@
             "line": 62,
             "name": "I clicked three dots in the end of row in column Action for country Test a context menu with options \"Edit\" and \"Delete\" shows",
             "result": {
-              "status": "passed",
-              "duration": 4342000000
+              "status": "skipped"
             }
           },
           {
@@ -515,8 +497,7 @@
             "line": 63,
             "name": "I choose \"Delete\" a content appeared \"Please note!\"and\"Are you sure you want to delete trial 1? The action cannot be reverted.\"",
             "result": {
-              "status": "passed",
-              "duration": 978000000
+              "status": "skipped"
             }
           },
           {
@@ -525,8 +506,7 @@
             "line": 64,
             "name": "clicked button Delete",
             "result": {
-              "status": "passed",
-              "duration": 548000000
+              "status": "skipped"
             }
           },
           {
@@ -535,8 +515,7 @@
             "line": 65,
             "name": "I see tooltip \"Country deleted\"and\"The country has been removed. The country can anyway be added again.\"",
             "result": {
-              "status": "passed",
-              "duration": 6792000000
+              "status": "skipped"
             }
           }
         ]
@@ -556,7 +535,7 @@
             "name": "Logged as user with role Global admin and role Global settings and PolarisMaintenance",
             "result": {
               "status": "passed",
-              "duration": 9411000000
+              "duration": 5388000000
             }
           },
           {
@@ -566,7 +545,7 @@
             "name": "clicked  button\"Global settings\"",
             "result": {
               "status": "passed",
-              "duration": 5561000000
+              "duration": 4524000000
             }
           },
           {
@@ -576,7 +555,7 @@
             "name": "clicked  button\"Locations\"",
             "result": {
               "status": "passed",
-              "duration": 237000000
+              "duration": 383000000
             }
           },
           {
@@ -586,7 +565,7 @@
             "name": "I am logged in",
             "result": {
               "status": "passed",
-              "duration": 20000000
+              "duration": 39000000
             }
           },
           {
@@ -596,7 +575,7 @@
             "name": "I clicked button \"Add Country\" a modal appeared",
             "result": {
               "status": "passed",
-              "duration": 7252000000
+              "duration": 4927000000
             }
           },
           {
@@ -642,8 +621,8 @@
             "line": 72,
             "name": "I create new country with following details:",
             "result": {
-              "status": "passed",
-              "duration": 12692000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 6000ms: Expected to find content: '°C' within the selector: 'div' but never did.\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\country.feature:42398:12)"
             }
           },
           {
@@ -652,8 +631,7 @@
             "line": 76,
             "name": "I clicked button \"Save\"",
             "result": {
-              "status": "passed",
-              "duration": 630000000
+              "status": "skipped"
             }
           },
           {
@@ -662,8 +640,7 @@
             "line": 77,
             "name": "I see tooltip\"Country added!\"and\"The new country has been successfully added to the global list.\"",
             "result": {
-              "status": "passed",
-              "duration": 7054000000
+              "status": "skipped"
             }
           },
           {
@@ -701,8 +678,7 @@
             "line": 78,
             "name": "in countryTable should be added row with following data:",
             "result": {
-              "status": "passed",
-              "duration": 2365000000
+              "status": "skipped"
             }
           },
           {
@@ -711,8 +687,7 @@
             "line": 83,
             "name": "I clicked on trial 1 name of country in column name in countries list a list with regions are loaded",
             "result": {
-              "status": "passed",
-              "duration": 2995000000
+              "status": "skipped"
             }
           },
           {
@@ -721,8 +696,7 @@
             "line": 84,
             "name": "I clicked button \"Add region\" a modal appeared",
             "result": {
-              "status": "passed",
-              "duration": 2379000000
+              "status": "skipped"
             }
           },
           {
@@ -731,8 +705,7 @@
             "line": 85,
             "name": "I typed All in field \"Region Name\"",
             "result": {
-              "status": "passed",
-              "duration": 654000000
+              "status": "skipped"
             }
           },
           {
@@ -741,8 +714,7 @@
             "line": 86,
             "name": "I clicked button \"Save\"",
             "result": {
-              "status": "passed",
-              "duration": 375000000
+              "status": "skipped"
             }
           },
           {
@@ -751,8 +723,7 @@
             "line": 87,
             "name": "I see tooltip \"Region added!\"and\"The new region has been successfully added to the global list.\"",
             "result": {
-              "status": "passed",
-              "duration": 6081000000
+              "status": "skipped"
             }
           },
           {
@@ -782,8 +753,7 @@
             "line": 88,
             "name": "in regionTable should be added row with following data:",
             "result": {
-              "status": "passed",
-              "duration": 704000000
+              "status": "skipped"
             }
           },
           {
@@ -792,8 +762,7 @@
             "line": 93,
             "name": "I clicked on trial 1  again name of countryTable in column name in countries list a list with given regions are loaded again.",
             "result": {
-              "status": "passed",
-              "duration": 2969000000
+              "status": "skipped"
             }
           },
           {
@@ -802,8 +771,7 @@
             "line": 94,
             "name": "I clicked button \"Add region\" a modal appeared",
             "result": {
-              "status": "passed",
-              "duration": 314000000
+              "status": "skipped"
             }
           },
           {
@@ -812,8 +780,7 @@
             "line": 95,
             "name": "I typed All in field \"Region Name\"",
             "result": {
-              "status": "passed",
-              "duration": 814000000
+              "status": "skipped"
             }
           },
           {
@@ -822,8 +789,7 @@
             "line": 96,
             "name": "I clicked button \"Save\"",
             "result": {
-              "status": "passed",
-              "duration": 516000000
+              "status": "skipped"
             }
           },
           {
@@ -832,8 +798,7 @@
             "line": 97,
             "name": "An error message \"Name All is used for another Region\" displays under field Region Name",
             "result": {
-              "status": "passed",
-              "duration": 146000000
+              "status": "skipped"
             }
           },
           {
@@ -842,8 +807,7 @@
             "line": 98,
             "name": "a modal is open, should not save the region with name All",
             "result": {
-              "status": "passed",
-              "duration": 331000000
+              "status": "skipped"
             }
           },
           {
@@ -852,8 +816,7 @@
             "line": 101,
             "name": "I clicked on trial 1 name of countryTable in column name in countries list a list with regions are loaded",
             "result": {
-              "status": "passed",
-              "duration": 3016000000
+              "status": "skipped"
             }
           },
           {
@@ -862,8 +825,7 @@
             "line": 102,
             "name": "I clicked on three dots in end of row  a context menu with options \"Edit\" and \"Delete\" shows",
             "result": {
-              "status": "passed",
-              "duration": 648000000
+              "status": "skipped"
             }
           },
           {
@@ -872,8 +834,7 @@
             "line": 103,
             "name": "I choose \"Edit\" a modal appeared",
             "result": {
-              "status": "passed",
-              "duration": 408000000
+              "status": "skipped"
             }
           },
           {
@@ -882,8 +843,7 @@
             "line": 104,
             "name": "I typed  \"Ala Bala\" in field Region Name",
             "result": {
-              "status": "passed",
-              "duration": 1078000000
+              "status": "skipped"
             }
           },
           {
@@ -892,8 +852,7 @@
             "line": 105,
             "name": "I clicked button \"X\" in right up corner of modal",
             "result": {
-              "status": "passed",
-              "duration": 367000000
+              "status": "skipped"
             }
           },
           {
@@ -902,8 +861,7 @@
             "line": 106,
             "name": "modal disappeared, should not changes any data for region All",
             "result": {
-              "status": "passed",
-              "duration": 82000000
+              "status": "skipped"
             }
           },
           {
@@ -912,8 +870,7 @@
             "line": 110,
             "name": "I clicked on trial 1 name of countrytable in column name in countries list a list with regions are loaded",
             "result": {
-              "status": "passed",
-              "duration": 3384000000
+              "status": "skipped"
             }
           },
           {
@@ -922,8 +879,7 @@
             "line": 111,
             "name": "I clicked on three dots in end of row  a context menu with options \"Edit\" and \"Delete\" shows",
             "result": {
-              "status": "passed",
-              "duration": 640000000
+              "status": "skipped"
             }
           },
           {
@@ -932,8 +888,7 @@
             "line": 112,
             "name": "I choose \"Edit\" a modal appeared",
             "result": {
-              "status": "passed",
-              "duration": 491000000
+              "status": "skipped"
             }
           },
           {
@@ -942,8 +897,7 @@
             "line": 113,
             "name": "I typed \"All Test\" in field Region Name",
             "result": {
-              "status": "passed",
-              "duration": 1233000000
+              "status": "skipped"
             }
           },
           {
@@ -952,8 +906,7 @@
             "line": 114,
             "name": "I clicked button \"Save\"",
             "result": {
-              "status": "passed",
-              "duration": 598000000
+              "status": "skipped"
             }
           },
           {
@@ -962,8 +915,7 @@
             "line": 115,
             "name": "I see tooltip \"Changes saved\"and\"The changes done to the table row have been successfully saved.\"",
             "result": {
-              "status": "passed",
-              "duration": 6264000000
+              "status": "skipped"
             }
           },
           {
@@ -993,8 +945,7 @@
             "line": 116,
             "name": "And in regionTable should be added row with following data:",
             "result": {
-              "status": "passed",
-              "duration": 935000000
+              "status": "skipped"
             }
           },
           {
@@ -1003,8 +954,7 @@
             "line": 121,
             "name": "I clicked three dots in the end of row in column Action for country trial a context menu with options \"Edit\" and \"Delete\" shows",
             "result": {
-              "status": "passed",
-              "duration": 4401000000
+              "status": "skipped"
             }
           },
           {
@@ -1013,8 +963,7 @@
             "line": 122,
             "name": "I choose \"Delete\"",
             "result": {
-              "status": "passed",
-              "duration": 182000000
+              "status": "skipped"
             }
           },
           {
@@ -1023,8 +972,7 @@
             "line": 123,
             "name": "a content appeared \"Please note!\"and\"The country cannot be deleted as it has regions.\"",
             "result": {
-              "status": "passed",
-              "duration": 938000000
+              "status": "skipped"
             }
           },
           {
@@ -1033,8 +981,7 @@
             "line": 124,
             "name": "clicked button \"Ok\"",
             "result": {
-              "status": "passed",
-              "duration": 564000000
+              "status": "skipped"
             }
           },
           {
@@ -1043,8 +990,7 @@
             "line": 125,
             "name": "modal disappeared, should not changes anything in data or row for country  trial 1",
             "result": {
-              "status": "passed",
-              "duration": 107000000
+              "status": "skipped"
             }
           },
           {
@@ -1053,8 +999,7 @@
             "line": 130,
             "name": "I clicked on trial 1 name of countrytable in column name in countries list a list with regions are loaded",
             "result": {
-              "status": "passed",
-              "duration": 4165000000
+              "status": "skipped"
             }
           },
           {
@@ -1063,8 +1008,7 @@
             "line": 131,
             "name": "I clicked on three dots in end of row  a context menu with options \"Edit\" and \"Delete\" shows",
             "result": {
-              "status": "passed",
-              "duration": 878000000
+              "status": "skipped"
             }
           },
           {
@@ -1073,8 +1017,7 @@
             "line": 132,
             "name": "I choose \"Delete\" a content appeared \"Please note!\"and\"Are you sure you want to delete All Test? The action cannot be reverted.\"",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 6000ms: Expected to find element: `[data-cy=\"countryTableDeleteButton\"]`, but never found it.\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\country.feature:41991:8)\n    at Context.resolveAndRunStepDefinition (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\country.feature:10423:29)\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\country.feature:9755:35)"
+              "status": "skipped"
             }
           },
           {

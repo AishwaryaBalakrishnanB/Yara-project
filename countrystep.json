@@ -3,7 +3,22 @@
 import * as utilityHelper from "./helper";
 import { Given, And, When, Then } from "cypress-cucumber-preprocessor/steps";
 
-
+beforeEach(function() {
+  // Steps which need to be executed before each test case
+  let Name
+  let valueToCheck=test
+  if(Name==valueToCheck){
+  utilityHelper.searchTableBasedOnColumn('countryTable','Name','test')
+  cy.get('tbody>tr>td').should('have.length',1)
+  cy.get('[data-cy=countryTableEditMenu]').click()
+  cy.get('[data-cy="countryTableDeleteButton"]').contains('Delete').should('be.visible')
+  cy.get('[data-cy="countryTableDeleteButton"]').click()
+  cy.get('[data-cy="countryDeleteDialogConfirmButton"]').click()
+  }
+  else{
+       cy.log('Country name test is already deleted')
+  }
+});
 Given('Logged as user with role Global admin and role Global settings and PolarisMaintenance', () =>
 {
     cy.LoginToApplication();

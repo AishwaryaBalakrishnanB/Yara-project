@@ -60,12 +60,14 @@ And ('I create new Unit with following details:',(datatable)=>{
 And ('clicked button {string} in ADD units',(button)=>{
     cy.get('[data-cy="unitFormButtonSubmit"]').contains(button).click({force: true})
 })
-Then ('I see tooltip {string}and{string}',(headerMsg,bodyMsg)=>{
-  utilityHelper.verifyAlertToolTips(headerMsg,bodyMsg)
+Then ('I see tooltip {string}and{string}',(headerMsg,bodyMsg)=>
+{
+    utilityHelper.verifyAlertToolTips(headerMsg,bodyMsg)
 })
-And ('in Table should be added row with following data:', (datatable)=>{
-utilityHelper.searchTableBasedOnColumn('unitTable','Name','test')
-utilityHelper.verifyTableData(datatable,'unitTable')
+And ('in Table should be added row with following data:', (datatable)=>
+{
+    utilityHelper.searchTableBasedOnColumn('unitTable','Name','test')
+    utilityHelper.verifyTableData(datatable,'unitTable')
 })
 //  Scenario: Edit unit without saving changes
 When('I clicked on three dots in end of row for unit Test a context menu with options {string} and {string} shows',(button1,button2)=>
@@ -79,11 +81,15 @@ And ('I clicked {string} a modal appeared with following data:',(button)=>
 {
  cy.contains(button).click()
 })
-And ('I changed data in all fields cropSettings:',(datatable)=>{
-    datatable.hashes().forEach((ele: any) => {
+And ('I changed data in all fields cropSettings:',(datatable)=>
+{
+    datatable.hashes().forEach((ele: any) => 
+    {
 
-        for (let propName in ele) {
-            switch (propName) {
+        for (let propName in ele)
+         {
+            switch (propName)
+             {
                 case 'Unit Name':
                     utilityHelper.setInputValue('[data-cy="unitFormInputName"]',ele[propName])
                     break;
@@ -123,11 +129,15 @@ And ('I clicked {string} a modal appeared with following data:',(button)=>
 {
  cy.contains(button).click()
 })
-And('I changed data in all fields cropSettings:',(dataTable)=>{
-    dataTable.hashes().forEach((ele: any) => {
+And('I changed data in all fields cropSettings:',(dataTable)=>
+{
+    dataTable.hashes().forEach((ele: any) => 
+    {
 
-        for (let propName in ele) {
-            switch (propName) {
+        for (let propName in ele) 
+        {
+            switch (propName) 
+            {
                case 'Unit Name':
                 
                     utilityHelper.setInputValue('[data-cy="unitFormInputName"]',ele[propName])
@@ -143,10 +153,10 @@ And('I changed data in all fields cropSettings:',(dataTable)=>{
                     break;
                    default:
                        break;
-               }
-           }
-       })
-   })
+            }
+        }
+    })
+})
 And ("clicked button 'Don't delete' in ADD units",()=>
 {
     cy.get('[data-cy=unitDeleteDialogCancelButton]').click()
@@ -157,8 +167,8 @@ Then ('I see tooltip {string}and{string}',(headerMsg,bodyMsg)=>
 })
   And ('data for Unit row should be updated:', (datatable)=>
 {
-  utilityHelper.searchTableBasedOnColumn('unitTable','Name','test')
-  utilityHelper.verifyTableData(datatable,'unitTable')
+    utilityHelper.searchTableBasedOnColumn('unitTable','Name','test')
+    utilityHelper.verifyTableData(datatable,'unitTable')
 })
 // Scenario:Denied  Deleting of unit
        
@@ -175,13 +185,13 @@ When(' I clicked on three dots in end of row for unit Test a context menu with o
 And ('I clicked "Delete" a content appered {string}and"{string}  unit',(button1,button2)=>
 {
     cy.get('[data-cy="unitTableDeleteButton"]').click()
-    cy.get('.cizzDZ',{timeout:8000}).contains(button1).should('be.visible')
-    cy.get('.hSeVfH',{timeout:7000}).contains(button2).should('be.visible')
+    cy.get('button',{timeout:8000}).contains(button1).should('be.visible')
+    cy.get('button',{timeout:7000}).contains(button2).should('be.visible')
 
 })
  And ("clicked button {string} cropSettings",(button)=>
 {
-cy.get('[data-cy="unitDeleteDialogCancelButton"]',{timeout:10000}).contains(button).click()
+    cy.get('[data-cy="unitDeleteDialogCancelButton"]',{timeout:10000}).contains(button).click()
 })
 Then('modal disappeared and deleting is not done. In table still stay row',()=>
 {
@@ -199,10 +209,11 @@ When(' I clicked on three dots in end of row for unit Test a context menu with o
     cy.get('[data-cy="unitTableDeleteButton"]').contains(button2).should('be.visible')
 
 })
-And ('I clicked "Delete" a content appered {string}and{string} unit',(button1,button2)=>{
+And ('I clicked "Delete" a content appered {string}and{string} unit',(button1,button2)=>
+{
     cy.get('[data-cy="unitTableDeleteButton"]').click()
-    cy.get('.cizzDZ',{timeout:8000}).contains(button1).should('be.visible')
-    cy.get('.hSeVfH',{timeout:7000}).contains(button2).should('be.visible')
+    cy.get('button',{timeout:8000}).contains(button1).should('be.visible')
+    cy.get('button',{timeout:7000}).contains(button2).should('be.visible')
 
 })
  And ('I clicked button {string} cropSettings',(button)=>
@@ -210,7 +221,8 @@ And ('I clicked "Delete" a content appered {string}and{string} unit',(button1,bu
      cy.get('[data-cy="unitDeleteDialogConfirmButton"]').contains(button).click()
 })
         
-Then(' I see tooltip {string}and{string}',(headerMsg,bodyMsg)=>{
+Then(' I see tooltip {string}and{string}',(headerMsg,bodyMsg)=>
+{
       utilityHelper.verifyAlertToolTips(headerMsg,bodyMsg)
 })
 // Scenario: Delete unit when is used in Unit Conversations
@@ -218,19 +230,19 @@ Then(' I see tooltip {string}and{string}',(headerMsg,bodyMsg)=>{
 When('I clicked on three dots in end of row for unit conversation a context menu with options {string} and {string} shows',(button1,button2)=>
 {
 
-     utilityHelper.searchTableBasedOnColumn('unitTable','Name','kg/ha')
+    utilityHelper.searchTableBasedOnColumn('unitTable','Name','kg/ha')
     cy.get('[data-cy="unitTableEditMenu"]').click()
-    //cy.get('sc-fzoXWK hnKkAN').contains(button1,button2)
     cy.get('[data-cy="unitTableEditButton"]').contains(button1).should('be.visible')
     cy.get('[data-cy="unitTableDeleteButton"]').contains(button2).should('be.visible')
 
 })
-And('clicked "Delete" a content appeared {string}and{string}',(button1,button2)=>{
+And('clicked "Delete" a content appeared {string}and{string}',(button1,button2)=>
+{
     cy.get('[data-cy="unitTableDeleteButton"]').click()
-    cy.get('.cizzDZ').contains(button1).should('be.visible')
-    cy.get('.fQYnnF').contains(button2).should('be.visible')
+    cy.get('button').contains(button1).should('be.visible')
+    cy.get('button').contains(button2).should('be.visible')
     
-  })
+})
 And('clicked button "Ok" units',()=>
 {
       cy.get('[data-cy="unitDeleteDialogCancelButton"]').click()

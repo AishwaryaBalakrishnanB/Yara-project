@@ -6,6 +6,7 @@
       "lib": ["es6", "dom"],
       "types": ["cypress","cypress-xpath"],
        "allowJs": true,
+       
     },
     "include": ["**/*.ts"]
 }

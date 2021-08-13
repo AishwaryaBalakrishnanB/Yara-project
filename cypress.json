@@ -11,7 +11,9 @@
     "chromeWebSecurity": false,
     "includeShadowDom": true ,       
   "baseUrl":"https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/",
+  "env":{
+    "graphqlUrl":"https://polaris-axial-gateway.stage.emea.yaradigitallabs.io/"
+  },
   "watchForFileChanges":false
-    
-  }
+}
   

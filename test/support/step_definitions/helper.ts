@@ -1,3 +1,5 @@
+//  import * as mutations from '.../support/mutations';
+
 
 /**
  * Verifies two tables, datatable from feature file and webtable from application, are equal.
@@ -76,7 +78,7 @@ export function setSingleDropdownValue(dropdowndatacy: string, valueToSet: strin
 { 
     cy.get(dropdowndatacy).parent().within(()=>
     {                                                                           
-        cy.get('div[class*="dropdown-indicator"]',{timeout:10000}).click({force: true}) 
+        cy.get('div[class*="dropdown-indicator"]',{timeout:10000}).click() 
         cy.contains('div', valueToSet).click()
     })
 }
@@ -156,5 +158,29 @@ export function setMultiDropdownValue(dropdowndatacy: string, valueToSet: string
     })
     cy.get('#search-tool').type(searchValue).type('{enter}');
 };
+
+export function getQueryresponse(TEST_QUERY_GET_COUNTRY: string, arg1: string) {
+    throw new Error("Function not implemented.");
+}
+
+export function DeleteAutomation(TEST_MUTATION_DELETE_COUNTRY: string, arg1: string) {
+    throw new Error("Function not implemented.");
+}
+
+export function deleteCountry(arg0: string) {
+    throw new Error("Function not implemented.");
+}
+// const localStoragePrefix = `CognitoIdentityServiceProvider.${Cypress.env(
+//     'COGNITO_CLIENT_ID',
+
+
+//   )}.`;
+//   export function getToken(): string | null {
+//     const userId = localStorage.getItem(`${localStoragePrefix}LastAuthUser`);
+//     const token = localStorage.getItem(`${localStoragePrefix}${userId}.idToken`);
+//     return token;
+//   }
+
+ 
 
 

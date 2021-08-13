@@ -23,7 +23,7 @@
             "name": "Logged as user with role Global admin and role Global settings and PolarisMaintenance",
             "result": {
               "status": "passed",
-              "duration": 42801000000
+              "duration": 23782000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "clicked  button\"Global settings\"",
             "result": {
               "status": "passed",
-              "duration": 5142000000
+              "duration": 10993000000
             }
           },
           {
@@ -43,7 +43,7 @@
             "name": "clicked \"Crop settings\" submenus \"Crops\", \"Units\", \"Unit Conversations\", \"Growth Scales\",\" Soil Types\",\"Crop Residue Management\",\"Variety Correction Factors\" became visible",
             "result": {
               "status": "passed",
-              "duration": 484000000
+              "duration": 323000000
             }
           },
           {
@@ -53,7 +53,7 @@
             "name": "clicked button\"Units\"",
             "result": {
               "status": "passed",
-              "duration": 626000000
+              "duration": 348000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "I am logged in cropSettings",
             "result": {
               "status": "passed",
-              "duration": 281000000
+              "duration": 235000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "I clicked button \"Add Unit\"",
             "result": {
               "status": "passed",
-              "duration": 4933000000
+              "duration": 2876000000
             }
           },
           {
@@ -102,7 +102,7 @@
             "name": "I create new Unit with following details:",
             "result": {
               "status": "passed",
-              "duration": 4758000000
+              "duration": 3450000000
             }
           },
           {
@@ -112,7 +112,7 @@
             "name": "clicked button \"Save\" in ADD units",
             "result": {
               "status": "passed",
-              "duration": 370000000
+              "duration": 236000000
             }
           },
           {
@@ -122,7 +122,7 @@
             "name": "I see tooltip \"Unit added!\"and\"The new unit has been successfully added to the global list.\"",
             "result": {
               "status": "passed",
-              "duration": 7767000000
+              "duration": 6240000000
             }
           },
           {
@@ -152,8 +152,9 @@
             "line": 21,
             "name": "in Table should be added row with following data:",
             "result": {
-              "status": "passed",
-              "duration": 2341000000
+              "status": "failed",
+              "duration": 1916000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -'Test'\n    +'Test 1Test'\n\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:42355:69)"
             }
           }
         ]
@@ -173,7 +174,7 @@
             "name": "Logged as user with role Global admin and role Global settings and PolarisMaintenance",
             "result": {
               "status": "passed",
-              "duration": 7846000000
+              "duration": 5649000000
             }
           },
           {
@@ -183,7 +184,7 @@
             "name": "clicked  button\"Global settings\"",
             "result": {
               "status": "passed",
-              "duration": 7032000000
+              "duration": 4257000000
             }
           },
           {
@@ -193,7 +194,7 @@
             "name": "clicked \"Crop settings\" submenus \"Crops\", \"Units\", \"Unit Conversations\", \"Growth Scales\",\" Soil Types\",\"Crop Residue Management\",\"Variety Correction Factors\" became visible",
             "result": {
               "status": "passed",
-              "duration": 319000000
+              "duration": 367000000
             }
           },
           {
@@ -203,7 +204,7 @@
             "name": "clicked button\"Units\"",
             "result": {
               "status": "passed",
-              "duration": 447000000
+              "duration": 408000000
             }
           },
           {
@@ -213,7 +214,7 @@
             "name": "I am logged in cropSettings",
             "result": {
               "status": "passed",
-              "duration": 216000000
+              "duration": 252000000
             }
           },
           {
@@ -222,8 +223,8 @@
             "line": 27,
             "name": "I clicked on three dots in end of row for unit Test a context menu with options \"Edit\" and \"Delete\" shows",
             "result": {
-              "status": "passed",
-              "duration": 8803000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 2 elements. Pass `{ multiple: true }` if you want to serially click each element.\n    at mouseAction (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/runner/cypress_runner.js:134539:17)\n    at Context.click (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/runner/cypress_runner.js:134718:14)\n    at Context.<anonymous> (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/runner/cypress_runner.js:153308:21)\nFrom Your Spec Code:\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:42630:45)\n    at Context.resolveAndRunStepDefinition (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:10423:29)\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:9755:35)"
             }
           },
           {
@@ -253,8 +254,7 @@
             "line": 28,
             "name": "I clicked \"Edit\" a modal appeared with following data:",
             "result": {
-              "status": "passed",
-              "duration": 317000000
+              "status": "skipped"
             }
           },
           {
@@ -282,8 +282,7 @@
             "line": 31,
             "name": "I changed data in all fields cropSettings:",
             "result": {
-              "status": "passed",
-              "duration": 10992000000
+              "status": "skipped"
             }
           },
           {
@@ -292,8 +291,7 @@
             "line": 34,
             "name": "I clicked button \"<X>\" in uper right corner of modal unit",
             "result": {
-              "status": "passed",
-              "duration": 586000000
+              "status": "skipped"
             }
           },
           {
@@ -323,8 +321,7 @@
             "line": 35,
             "name": "a modal disappeared , no changed done to row and data",
             "result": {
-              "status": "passed",
-              "duration": 129000000
+              "status": "skipped"
             }
           }
         ]
@@ -344,7 +341,7 @@
             "name": "Logged as user with role Global admin and role Global settings and PolarisMaintenance",
             "result": {
               "status": "passed",
-              "duration": 7407000000
+              "duration": 1599000000
             }
           },
           {
@@ -354,7 +351,7 @@
             "name": "clicked  button\"Global settings\"",
             "result": {
               "status": "passed",
-              "duration": 5436000000
+              "duration": 3716000000
             }
           },
           {
@@ -364,7 +361,7 @@
             "name": "clicked \"Crop settings\" submenus \"Crops\", \"Units\", \"Unit Conversations\", \"Growth Scales\",\" Soil Types\",\"Crop Residue Management\",\"Variety Correction Factors\" became visible",
             "result": {
               "status": "passed",
-              "duration": 365000000
+              "duration": 507000000
             }
           },
           {
@@ -374,7 +371,7 @@
             "name": "clicked button\"Units\"",
             "result": {
               "status": "passed",
-              "duration": 489000000
+              "duration": 522000000
             }
           },
           {
@@ -384,7 +381,7 @@
             "name": "I am logged in cropSettings",
             "result": {
               "status": "passed",
-              "duration": 278000000
+              "duration": 310000000
             }
           },
           {
@@ -393,8 +390,8 @@
             "line": 40,
             "name": "I clicked on three dots in end of row for unit Test a context menu with options \"Edit\" and \"Delete\" shows",
             "result": {
-              "status": "passed",
-              "duration": 7268000000
+              "status": "failed",
+              "error_message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 2 elements. Pass `{ multiple: true }` if you want to serially click each element.\n    at mouseAction (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/runner/cypress_runner.js:134539:17)\n    at Context.click (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/runner/cypress_runner.js:134718:14)\n    at Context.<anonymous> (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/runner/cypress_runner.js:153308:21)\nFrom Your Spec Code:\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:42630:45)\n    at Context.resolveAndRunStepDefinition (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:10423:29)\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:9755:35)"
             }
           },
           {
@@ -422,8 +419,7 @@
             "line": 41,
             "name": "I clicked \"Edit\" a modal appeared with following data:",
             "result": {
-              "status": "passed",
-              "duration": 295000000
+              "status": "skipped"
             }
           },
           {
@@ -451,8 +447,7 @@
             "line": 44,
             "name": "I changed data in all fields cropSettings:",
             "result": {
-              "status": "passed",
-              "duration": 9562000000
+              "status": "skipped"
             }
           },
           {
@@ -461,8 +456,7 @@
             "line": 47,
             "name": "clicked button \"Save\" in ADD units",
             "result": {
-              "status": "passed",
-              "duration": 287000000
+              "status": "skipped"
             }
           },
           {
@@ -471,8 +465,7 @@
             "line": 48,
             "name": "I see tooltip \"Changes saved\"and\"The changes done to the table row have been successfully saved.\"",
             "result": {
-              "status": "passed",
-              "duration": 6781000000
+              "status": "skipped"
             }
           },
           {
@@ -502,8 +495,7 @@
             "line": 49,
             "name": "data for Unit row should be updated:",
             "result": {
-              "status": "passed",
-              "duration": 2773000000
+              "status": "skipped"
             }
           }
         ]
@@ -523,7 +515,7 @@
             "name": "Logged as user with role Global admin and role Global settings and PolarisMaintenance",
             "result": {
               "status": "passed",
-              "duration": 1607000000
+              "duration": 1477000000
             }
           },
           {
@@ -532,8 +524,8 @@
             "line": 6,
             "name": "clicked  button\"Global settings\"",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 11000ms: Expected to find content: 'Global settings' but never did.\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:41783:8)\n    at Context.resolveAndRunStepDefinition (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:10423:29)\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:9755:35)"
+              "status": "passed",
+              "duration": 3422000000
             }
           },
           {
@@ -542,7 +534,8 @@
             "line": 7,
             "name": "clicked \"Crop settings\" submenus \"Crops\", \"Units\", \"Unit Conversations\", \"Growth Scales\",\" Soil Types\",\"Crop Residue Management\",\"Variety Correction Factors\" became visible",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 406000000
             }
           },
           {
@@ -551,7 +544,8 @@
             "line": 8,
             "name": "clicked button\"Units\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 468000000
             }
           },
           {
@@ -560,7 +554,8 @@
             "line": 9,
             "name": "I am logged in cropSettings",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 302000000
             }
           },
           {
@@ -569,7 +564,8 @@
             "line": 54,
             "name": "I clicked on three dots in end of row for unit Test a context menu with options \"Edit\" and \"Delete\" shows",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 2 elements. Pass `{ multiple: true }` if you want to serially click each element.\n    at mouseAction (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/runner/cypress_runner.js:134539:17)\n    at Context.click (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/runner/cypress_runner.js:134718:14)\n    at Context.<anonymous> (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/runner/cypress_runner.js:153308:21)\nFrom Your Spec Code:\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:42630:45)\n    at Context.resolveAndRunStepDefinition (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:10423:29)\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:9755:35)"
             }
           },
           {
@@ -637,7 +633,7 @@
             "name": "Logged as user with role Global admin and role Global settings and PolarisMaintenance",
             "result": {
               "status": "passed",
-              "duration": 877000000
+              "duration": 987000000
             }
           },
           {
@@ -646,8 +642,8 @@
             "line": 6,
             "name": "clicked  button\"Global settings\"",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 11000ms: Expected to find content: 'Global settings' but never did.\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:41783:8)\n    at Context.resolveAndRunStepDefinition (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:10423:29)\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:9755:35)"
+              "status": "passed",
+              "duration": 3606000000
             }
           },
           {
@@ -656,7 +652,8 @@
             "line": 7,
             "name": "clicked \"Crop settings\" submenus \"Crops\", \"Units\", \"Unit Conversations\", \"Growth Scales\",\" Soil Types\",\"Crop Residue Management\",\"Variety Correction Factors\" became visible",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 465000000
             }
           },
           {
@@ -665,7 +662,8 @@
             "line": 8,
             "name": "clicked button\"Units\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 867000000
             }
           },
           {
@@ -674,7 +672,8 @@
             "line": 9,
             "name": "I am logged in cropSettings",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 463000000
             }
           },
           {
@@ -683,7 +682,9 @@
             "line": 63,
             "name": "I clicked on three dots in end of row for unit Test a context menu with options \"Edit\" and \"Delete\" shows",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 2 elements. Pass `{ multiple: true }` if you want to serially click each element.\n    at mouseAction (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/runner/cypress_runner.js:134539:17)\n    at Context.click (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/runner/cypress_runner.js:134718:14)\n    at Context.<anonymous> (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/runner/cypress_runner.js:153308:21)\nFrom Your Spec Code:\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:42630:45)\n    at Context.resolveAndRunStepDefinition (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:10423:29)\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\unit.feature:9755:35)"
             }
           },
           {
@@ -730,7 +731,7 @@
             "name": "Logged as user with role Global admin and role Global settings and PolarisMaintenance",
             "result": {
               "status": "passed",
-              "duration": 27378000000
+              "duration": 1550000000
             }
           },
           {
@@ -740,7 +741,7 @@
             "name": "clicked  button\"Global settings\"",
             "result": {
               "status": "passed",
-              "duration": 5161000000
+              "duration": 6037000000
             }
           },
           {
@@ -750,7 +751,7 @@
             "name": "clicked \"Crop settings\" submenus \"Crops\", \"Units\", \"Unit Conversations\", \"Growth Scales\",\" Soil Types\",\"Crop Residue Management\",\"Variety Correction Factors\" became visible",
             "result": {
               "status": "passed",
-              "duration": 379000000
+              "duration": 1069000000
             }
           },
           {
@@ -760,7 +761,7 @@
             "name": "clicked button\"Units\"",
             "result": {
               "status": "passed",
-              "duration": 430000000
+              "duration": 1052000000
             }
           },
           {
@@ -770,7 +771,7 @@
             "name": "I am logged in cropSettings",
             "result": {
               "status": "passed",
-              "duration": 360000000
+              "duration": 480000000
             }
           },
           {
@@ -780,7 +781,7 @@
             "name": "I clicked on three dots in end of row for unit conversation a context menu with options \"Edit\" and \"Delete\" shows",
             "result": {
               "status": "passed",
-              "duration": 7957000000
+              "duration": 8473000000
             }
           },
           {
@@ -790,7 +791,7 @@
             "name": "clicked \"Delete\" a content appeared \"Please note!\"and\"The unit cannot be deleted as long as it is used in unit conversions, Crop nutrition plan data. Edit the related data and try again.\"",
             "result": {
               "status": "passed",
-              "duration": 737000000
+              "duration": 1421000000
             }
           },
           {
@@ -800,7 +801,7 @@
             "name": "clicked button \"Ok\" units",
             "result": {
               "status": "passed",
-              "duration": 298000000
+              "duration": 572000000
             }
           },
           {
@@ -810,7 +811,7 @@
             "name": "a modal disappeared , no changed done to row and data unit conversation",
             "result": {
               "status": "passed",
-              "duration": 164000000
+              "duration": 122000000
             }
           }
         ]
