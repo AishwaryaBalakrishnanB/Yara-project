@@ -1,0 +1,558 @@
+[
+  {
+    "description": "    Add, edit and delete country\n    Add, edit and delete regions\n    Will described in one place because there are some restrictions when delete country with added regions",
+    "keyword": "Feature",
+    "name": "Locations and regions",
+    "line": 1,
+    "id": "locations-and-regions",
+    "tags": [],
+    "uri": "addnewcountry.feature",
+    "elements": [
+      {
+        "id": "locations-and-regions;add-new-country",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Add new country",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "Logged as user with role Global admin and role Global settings and PolarisMaintenance",
+            "result": {
+              "status": "passed",
+              "duration": 6234000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "clicked  button\"Global settings\"",
+            "result": {
+              "status": "passed",
+              "duration": 7110000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "clicked  button\"Locations\"",
+            "result": {
+              "status": "passed",
+              "duration": 675000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I am logged in",
+            "result": {
+              "status": "passed",
+              "duration": 108000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I clicked button \"Add Country\" a modal appeared",
+            "result": {
+              "status": "passed",
+              "duration": 6323000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "CountryName",
+                      "CountryCode",
+                      "Currency",
+                      "Whichunitsystemisusing?",
+                      "Windspeedunit",
+                      "Precipitationamountunit",
+                      "Evapotranspirationunit",
+                      "Qpfsnowamountunit",
+                      "Temperatureunit",
+                      "Dewpointunit",
+                      "ProductSetCode(Optional)",
+                      "Solutions(Optional)"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Test",
+                      "TS",
+                      "AFN",
+                      "Metric",
+                      "km/h",
+                      "mm",
+                      "mm",
+                      "cm",
+                      "°C",
+                      "°C",
+                      "33",
+                      "CNP"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I create new country with following details:",
+            "result": {
+              "status": "passed",
+              "duration": 14781000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "I clicked button \"Save\"",
+            "result": {
+              "status": "passed",
+              "duration": 650000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I see tooltip\"Country added!\"and\"The new country has been successfully added to the global list.\"",
+            "result": {
+              "status": "passed",
+              "duration": 6546000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Name",
+                      "CountryCode",
+                      "CurrencyCode",
+                      "ProductSetCode",
+                      "Solutions",
+                      "Translationkey",
+                      "Lastmod.",
+                      "Actions"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Test",
+                      "TS",
+                      "AFN",
+                      "33",
+                      "CNP",
+                      "country.test",
+                      "?",
+                      "···"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 25,
+            "name": "in Table should be added row with following data:",
+            "result": {
+              "status": "failed",
+              "duration": 2083000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -'Test'\n    +'AutoAdd_Edit_Test 1AutoAdd_TestSampletestSampletestSampletestSampletestTestTestTest'\n\n    at Object.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\addnewcountry.feature:42356:77)\n    at step (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\addnewcountry.feature:42317:23)\n    at Object.eval [as next] (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\addnewcountry.feature:42298:53)\n    at eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\addnewcountry.feature:42292:71)\nat new Promise (<anonymous>)\n    at __awaiter (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\addnewcountry.feature:42288:12)\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\addnewcountry.feature:42348:119)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "locations-and-regions;edit-country-without-save-the-data",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Edit Country without save the data",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "Logged as user with role Global admin and role Global settings and PolarisMaintenance",
+            "result": {
+              "status": "passed",
+              "duration": 5062000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "clicked  button\"Global settings\"",
+            "result": {
+              "status": "passed",
+              "duration": 4638000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "clicked  button\"Locations\"",
+            "result": {
+              "status": "passed",
+              "duration": 351000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I am logged in",
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "I clicked three dots in the end of row in column Action for country Test a context menu with options \"Edit\" and \"Delete\" shows",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 9 elements. Pass `{ multiple: true }` if you want to serially click each element.\n    at mouseAction (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/runner/cypress_runner.js:134539:17)\n    at Context.click (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/runner/cypress_runner.js:134718:14)\n    at Context.<anonymous> (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/runner/cypress_runner.js:153308:21)\nFrom Your Spec Code:\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\addnewcountry.feature:41851:46)\n    at Context.resolveAndRunStepDefinition (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\addnewcountry.feature:10423:29)\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\addnewcountry.feature:9755:35)"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Country Name",
+                      "CountryCode",
+                      "Currency",
+                      "Whichunitsystemisusing ?",
+                      "Windspeedunit",
+                      "Precipitationamountunit",
+                      "Evapotranspirationunit",
+                      "Qpfsnowamountunit",
+                      "Temperatureunit",
+                      "Dewpointunit",
+                      "ProductSetCode(Optional)",
+                      "Solutions(Optional)"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Test",
+                      "TS",
+                      "AFN",
+                      "Metric",
+                      "km/h",
+                      "mm",
+                      "mm",
+                      "cm",
+                      "°C",
+                      "°C",
+                      "33",
+                      "CNP"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 32,
+            "name": "I choose \"Edit\" a modal appeared with following data:",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Country Name",
+                      "CountryCode",
+                      "Currency",
+                      "Whichunitsystemisusing ?",
+                      "Windspeedunit",
+                      "Precipitationamountunit",
+                      "Evapotranspirationunit",
+                      "Qpfsnowamountunit",
+                      "Temperatureunit",
+                      "Dewpointunit",
+                      "ProductSetCode(Optional)",
+                      "Solutions(Optional)"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Test 1",
+                      "TP",
+                      "EUR",
+                      "Imperial",
+                      "mph",
+                      "inch",
+                      "inch",
+                      "inch",
+                      "°F",
+                      "°F",
+                      "34",
+                      "Ayra"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 35,
+            "name": "I changed data in all fields:",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "I clicked button \"<X>\" in right up corner of modal",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "modal disappeared, should not changes any data for country Test",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "locations-and-regions;edit-country-and-save-changes",
+        "keyword": "Scenario",
+        "line": 41,
+        "name": "Edit Country and save changes",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "Logged as user with role Global admin and role Global settings and PolarisMaintenance",
+            "result": {
+              "status": "passed",
+              "duration": 5385000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "clicked  button\"Global settings\"",
+            "result": {
+              "status": "passed",
+              "duration": 5347000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "clicked  button\"Locations\"",
+            "result": {
+              "status": "passed",
+              "duration": 578000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I am logged in",
+            "result": {
+              "status": "passed",
+              "duration": 32000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 43,
+            "name": "I clicked three dots in the end of row in column Action for country Test a context menu with options \"Edit\" and \"Delete\" shows",
+            "result": {
+              "status": "failed",
+              "error_message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 9 elements. Pass `{ multiple: true }` if you want to serially click each element.\n    at mouseAction (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/runner/cypress_runner.js:134539:17)\n    at Context.click (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/runner/cypress_runner.js:134718:14)\n    at Context.<anonymous> (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/runner/cypress_runner.js:153308:21)\nFrom Your Spec Code:\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\addnewcountry.feature:41851:46)\n    at Context.resolveAndRunStepDefinition (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\addnewcountry.feature:10423:29)\n    at Context.eval (https://agrocore-admin-polaris.stage.emea.yaradigitallabs.io/__cypress/tests?p=test\\specs\\features\\addnewcountry.feature:9755:35)"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "CountryName",
+                      "CountryCode",
+                      "Currency",
+                      "Whichunitsystemisusing ?",
+                      "Windspeedunit",
+                      "Precipitationamountunit",
+                      "Evapotranspirationunit",
+                      "Qpfsnowamountunit",
+                      "Temperatureunit",
+                      "Dewpointunit",
+                      "ProductSetCode(Optional)",
+                      "Solutions(Optional)"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Test",
+                      "TS",
+                      "AFN",
+                      "Metric",
+                      "km/h",
+                      "mm",
+                      "mm",
+                      "cm",
+                      "°C",
+                      "°C",
+                      "33",
+                      "CNP"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 44,
+            "name": "I choose \"Edit\" a modal appeared with following data:",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "CountryName",
+                      "CountryCode",
+                      "Currency",
+                      "Whichunitsystemisusing ?",
+                      "Windspeedunit",
+                      "Precipitationamountunit",
+                      "Evapotranspirationunit",
+                      "Qpfsnowamountunit",
+                      "Temperatureunit",
+                      "Dewpointunit",
+                      "ProductSetCode(Optional)",
+                      "Solutions(Optional)"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Test 1",
+                      "TP",
+                      "EUR",
+                      "Imperial",
+                      "mph",
+                      "inch",
+                      "inch",
+                      "inch",
+                      "°F",
+                      "°F",
+                      "34",
+                      "Ayra"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 48,
+            "name": "I changed data in all fields:",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "I clicked button \"Save\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 52,
+            "name": "I see tooltip\"Changes saved\"and\"The changes done to the table row have been successfully saved.\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Name",
+                      "CountryCode",
+                      "CurrencyCode",
+                      "ProductSetCode",
+                      "Solutions",
+                      "Translationkey",
+                      "Last mod.",
+                      "Actions"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Test 1",
+                      "TP",
+                      "BGN",
+                      "34",
+                      "CNPAyra",
+                      "country.test_1",
+                      "?",
+                      "···"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 53,
+            "name": "data for country should be updated in row:",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

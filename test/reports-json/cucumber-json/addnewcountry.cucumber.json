@@ -1,0 +1,129 @@
+[
+  {
+    "description": "    Add, edit and delete country\n    Add, edit and delete regions\n    Will described in one place because there are some restrictions when delete country with added regions",
+    "keyword": "Feature",
+    "name": "Locations and regions",
+    "line": 1,
+    "id": "locations-and-regions",
+    "tags": [],
+    "uri": "addnewcountry.feature",
+    "elements": [
+      {
+        "id": "locations-and-regions;add-new-country",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Add new country",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "Logged as user with role Global admin and role Global settings and PolarisMaintenance",
+            "result": {
+              "status": "passed",
+              "duration": 12266000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "clicked to button \"Global settings\"",
+            "result": {
+              "status": "passed",
+              "duration": 8438000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "clicked \"Locations\"",
+            "result": {
+              "status": "passed",
+              "duration": 244000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I am logged in",
+            "result": {
+              "status": "passed",
+              "duration": 8238000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I clicked button \"Add Country\" a modal appeared",
+            "result": {
+              "status": "passed",
+              "duration": 644000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "CountryName",
+                      "CountryCode",
+                      "Currency",
+                      "Whichunitsystemisusing ?",
+                      "Windspeedunit",
+                      "Precipitationamountunit",
+                      "Evapotranspirationunit",
+                      "Qpfsnowamountunit",
+                      "Temperatureunit",
+                      "Dewpointunit",
+                      "ProductSetCode(Optional)",
+                      "Solutions(Optional)"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Test",
+                      "TS",
+                      "AFN",
+                      "Metric",
+                      "km/h",
+                      "mm",
+                      "mm",
+                      "cm",
+                      "°C",
+                      "°C",
+                      "33",
+                      "CNP"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I create new country with following details:",
+            "result": {
+              "status": "undefined",
+              "duration": 42000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I clicked button \"Save\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
